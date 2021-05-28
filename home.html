@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" />
+    <meta name="theme-color" content="#1e2327">
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+    <link href="./CSS/header.css" rel="stylesheet" type="text/css" />
+    <link href="./CSS/body.css" rel="stylesheet" type="text/css" />
+    <link href="./CSS/footer.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- Loading bar start -->
+    <div class="header__loading__bar"></div>
+    <!-- Loading bar end -->
+
+    <!-- Large screen header start -->
+    <header class="header header__h767">
+        <div class="header__left">
+            <div class="header__item first__item">
+                <a href="https://github.com/">
+                    <svg class="header__logo" height="32" width="32" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M 8 0 C 3.58 0 0 3.58 0 8 c 0 3.54 2.29 6.53 5.47 7.59 c 0.4 0.07 0.55 -0.17 0.55 -0.38 c 0 -0.19 -0.01 -0.82 -0.01 -1.49 c -2.01 0.37 -2.53 -0.49 -2.69 -0.94 c -0.09 -0.23 -0.48 -0.94 -0.82 -1.13 c -0.28 -0.15 -0.68 -0.52 -0.01 -0.53 c 0.63 -0.01 1.08 0.58 1.23 0.82 c 0.72 1.21 1.87 0.87 2.33 0.66 c 0.07 -0.52 0.28 -0.87 0.51 -1.07 c -1.78 -0.2 -3.64 -0.89 -3.64 -3.95 c 0 -0.87 0.31 -1.59 0.82 -2.15 c -0.08 -0.2 -0.36 -1.02 0.08 -2.12 c 0 0 0.67 -0.21 2.2 0.82 c 0.64 -0.18 1.32 -0.27 2 -0.27 c 0.68 0 1.36 0.09 2 0.27 c 1.53 -1.04 2.2 -0.82 2.2 -0.82 c 0.44 1.1 0.16 1.92 0.08 2.12 c 0.51 0.56 0.82 1.27 0.82 2.15 c 0 3.07 -1.87 3.75 -3.65 3.95 c 0.29 0.25 0.54 0.73 0.54 1.48 c 0 1.07 -0.01 1.93 -0.01 2.2 c 0 0.21 0.15 0.46 0.55 0.38 A 8.013 8.013 0 0 0 16 8 c 0 -4.42 -3.58 -8 -8 -8 Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="header__item second__item">
+                <div class="header__search">
+                    <form>
+                        <label class="input__wrapper">
+                            <input id="input__focus" class="header__input header__lg__input" type="text" placeholder="Search or jump to..." autocomplete="off"/>
+                            <img class="input__img" src="https://github.githubassets.com/images/search-key-slash.svg" alt="">
+                        </label>
+                    </form>
+                </div>
+                <nav class="header__nav">
+                    <a href="https://github.com/pulls"><span class="header__h1011">Pull requests</span><span class="header__v1011">Pulls</span></a>
+                    <a href="https://github.com/issues">Issues</a>
+                    <a href="https://github.com/marketplace">Marketplace</a>
+                    <a href="https://github.com/explore">Explore</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="header__item header__margin__right right__actions">
+                <div class="notification">
+                    <a href="https://github.com/notifications" class="header__link">
+                        <span class="notification__indicator"></span>
+                        <svg class="header__icons" viewBox="0 0 16 16" height="16" width="16">
+                            <path d="M 8 16 a 2 2 0 0 0 1.985 -1.75 c 0.017 -0.137 -0.097 -0.25 -0.235 -0.25 h -3.5 c -0.138 0 -0.252 0.113 -0.235 0.25 A 2 2 0 0 0 8 16 Z">
+                            </path>
+                            <path fill-rule="evenodd" d="M 8 1.5 A 3.5 3.5 0 0 0 4.5 5 v 2.947 c 0 0.346 -0.102 0.683 -0.294 0.97 l -1.703 2.556 a 0.018 0.018 0 0 0 -0.003 0.01 l 0.001 0.006 c 0 0.002 0.002 0.004 0.004 0.006 a 0.017 0.017 0 0 0 0.006 0.004 l 0.007 0.001 h 10.964 l 0.007 -0.001 a 0.016 0.016 0 0 0 0.006 -0.004 a 0.016 0.016 0 0 0 0.004 -0.006 l 0.001 -0.007 a 0.017 0.017 0 0 0 -0.003 -0.01 l -1.703 -2.554 a 1.75 1.75 0 0 1 -0.294 -0.97 V 5 A 3.5 3.5 0 0 0 8 1.5 Z M 3 5 a 5 5 0 0 1 10 0 v 2.947 c 0 0.05 0.015 0.098 0.042 0.139 l 1.703 2.555 A 1.518 1.518 0 0 1 13.482 13 H 2.518 a 1.518 1.518 0 0 1 -1.263 -2.36 l 1.703 -2.554 A 0.25 0.25 0 0 0 3 7.947 V 5 Z">
+                            </path>
+                        </svg>
+                    </a>
+                    <span class="header__tooltip">
+                        You have unread notifications
+                    </span>
+                </div>
+            </div>
+            <div class="header__item header__margin__right">
+                <details id="header__add__details" class="header__overlay">
+                    <summary class="header__link">
+                        <svg class="header__icons" viewBox="0 0 16 16" height="16" width="16">
+                            <path fill-rule="evenodd" d="M 7.75 2 a 0.75 0.75 0 0 1 0.75 0.75 V 7 h 4.25 a 0.75 0.75 0 1 1 0 1.5 H 8.5 v 4.25 a 0.75 0.75 0 1 1 -1.5 0 V 8.5 H 2.75 a 0.75 0.75 0 0 1 0 -1.5 H 7 V 2.75 A 0.75 0.75 0 0 1 7.75 2 Z">
+                            </path>
+                        </svg>
+                        <span class="drop__down"></span>
+                    </summary>
+                    <div id="header__add__details__nav" class="header__drop__down">
+                        <a href="https://github.com/new">New repository</a>
+                        <a href="https://github.com/new/import">Import repository</a>
+                        <a href="https://gist.github.com/">New gist</a>
+                        <a href="https://github.com/organizations/plan">New organization</a>
+                        <a href="https://github.com/new/project">New project</a>
+                    </div>
+                </details>
+            </div>
+            <div class="header__item">
+                <details id="header__profile__details" class="header__overlay">
+                    <summary class="header__link">
+                        <img id="nav__profile__img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAQlBMVEXw8PDMnlby9PfKmUnLnFLSrnjp4NXUsYDn3dDJl0XZvZfLm07SrHbq49rRqnDYupHv7evIkzrj07/NoV70+P7gzrYJjsFgAAAB2UlEQVR4nO3cS24aYRCFUcyjDW7Aee5/qxllFqlLya12yTnfAq7+A2Jm1+EgSZIkSZK01Zel0uOjn/kPLV9P292ex49+59+3nF62O18IB0dIOD9CwvkREs6PkHB+hITzIyScHyHh/AgJ50dIOD9CwvkREnZ1LFVZWm7n7dZ7aSv3qsPj8lrorTL2eF62u7+XpnKvGvrBJ18188eTfBUhYU+EhF1buQgJu7ZyERJ2beUiJOzaykVI2LWVi5CwaysXIWHXVi5Cwq6tXISEXVu5CAm7tnJ9euFxf+HzUboIEevburPw5Vy4B5GsAswKR0ZIOD9CwvkREs6PkHB+hITzIyScHyHh/AgJ50dIOD9CwvkREs6P8Lew8r/95/1fn7s4UDr1cPm+NzB3gKJ26uHH687f4mnJXf6ofQq7C6+5xxMSEhISEhISEhISEhISEhISEhISEhISEhISEhISEv6ptXIuobQ0VLj+vG633CtTQ4Wna+GPI6pT/aiuZxESNkVI2DOVjJCwZyoZIWHPVDJCwp6pZISEPVPJCAl7ppIREvZMJSMk7JlKRkjYM5WMkLBnKtn/IFwLVxxuNWFsKtnx7V644vBc9p2KVrrhkLtSkbwHIUmSJEnSZ+wXlnts5xGErVoAAAAASUVORK5CYII=" 
+                        alt="" height="20" width="20">
+                        <span  class="drop__down"></span>
+                    </summary>
+                    <div class="header__drop__down header__profile">
+                        <div class="header__user">
+                            <a href="#">Signed in as <strong>Tosin-Ojo</strong></a>
+                        </div>
+                        <div class="header__status">
+                            <div class="header__status__inner">
+                                <button id="header__status__button">
+                                    <svg class="header__status__emoji" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill-rule="evenodd" d="M 1.5 8 a 6.5 6.5 0 1 1 13 0 a 6.5 6.5 0 0 1 -13 0 Z M 8 0 a 8 8 0 1 0 0 16 A 8 8 0 0 0 8 0 Z M 5 8 a 1 1 0 1 0 0 -2 a 1 1 0 0 0 0 2 Z m 7 -1 a 1 1 0 1 1 -2 0 a 1 1 0 0 1 2 0 Z M 5.32 9.636 a 0.75 0.75 0 0 1 1.038 0.175 l 0.007 0.009 c 0.103 0.118 0.22 0.222 0.35 0.31 c 0.264 0.178 0.683 0.37 1.285 0.37 c 0.602 0 1.02 -0.192 1.285 -0.371 c 0.13 -0.088 0.247 -0.192 0.35 -0.31 l 0.007 -0.008 a 0.75 0.75 0 1 1 1.222 0.87 l -0.614 -0.431 c 0.614 0.43 0.614 0.431 0.613 0.431 v 0.001 l -0.001 0.002 l -0.002 0.003 l -0.005 0.007 l -0.014 0.019 a 1.984 1.984 0 0 1 -0.184 0.213 c -0.16 0.166 -0.338 0.316 -0.53 0.445 c -0.63 0.418 -1.37 0.638 -2.127 0.629 c -0.946 0 -1.652 -0.308 -2.126 -0.63 a 3.32 3.32 0 0 1 -0.715 -0.657 l -0.014 -0.02 l -0.005 -0.006 l -0.002 -0.003 v -0.002 h -0.001 l 0.613 -0.432 l -0.614 0.43 a 0.75 0.75 0 0 1 0.183 -1.044 h 0.001 Z">
+                                        </path>
+                                    </svg>
+                                    <span>Set status</span>
+                                </button>
+                            </div>
+                        </div>
+                        <nav class="header__directories">
+                            <a id="nav__profile__1">Your profile</a>
+                            <a id="nav__profile__2">Your repositories</a>
+                            <a href="https://github.com/codespaces">Your codespaces</a>
+                            <a id="nav__profile__3">Your projects</a>
+                            <a id="nav__profile__4">Your stars</a>
+                            <a href="https://gist.github.com/mine">Your gists</a>
+                        </nav>
+                        <nav class="header__settings">
+                            <a href="https://github.com/settings/billing/plans">Upgrade</a>
+                            <button id="feature__button" href="">Feature preview</button>
+                            <a href="https://docs.github.com">Help</a>
+                            <a href="https://github.com/settings/profile">Settings</a>
+                        </nav>
+                        <nav class="header__login">
+                            <a href="/index">Sign out</a>
+                        </nav>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </header>
+    <!-- Large screen header ends -->
+
+    <!-- Small screen header start -->
+    <header class="header  header__v767">
+        <div class="header__item header__center">
+            <button id="menu_btn" class="header__menu__button">
+                <svg class="header__menu" height="24" width="24" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M 1 2.75 A 0.75 0.75 0 0 1 1.75 2 h 12.5 a 0.75 0.75 0 1 1 0 1.5 H 1.75 A 0.75 0.75 0 0 1 1 2.75 Z m 0 5 A 0.75 0.75 0 0 1 1.75 7 h 12.5 a 0.75 0.75 0 1 1 0 1.5 H 1.75 A 0.75 0.75 0 0 1 1 7.75 Z M 1.75 12 a 0.75 0.75 0 1 0 0 1.5 h 12.5 a 0.75 0.75 0 1 0 0 -1.5 H 1.75 Z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="header__item header__center header__sm__second">
+            <a href="https://github.com/">
+                <svg class="header__logo" height="32" width="32" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M 8 0 C 3.58 0 0 3.58 0 8 c 0 3.54 2.29 6.53 5.47 7.59 c 0.4 0.07 0.55 -0.17 0.55 -0.38 c 0 -0.19 -0.01 -0.82 -0.01 -1.49 c -2.01 0.37 -2.53 -0.49 -2.69 -0.94 c -0.09 -0.23 -0.48 -0.94 -0.82 -1.13 c -0.28 -0.15 -0.68 -0.52 -0.01 -0.53 c 0.63 -0.01 1.08 0.58 1.23 0.82 c 0.72 1.21 1.87 0.87 2.33 0.66 c 0.07 -0.52 0.28 -0.87 0.51 -1.07 c -1.78 -0.2 -3.64 -0.89 -3.64 -3.95 c 0 -0.87 0.31 -1.59 0.82 -2.15 c -0.08 -0.2 -0.36 -1.02 0.08 -2.12 c 0 0 0.67 -0.21 2.2 0.82 c 0.64 -0.18 1.32 -0.27 2 -0.27 c 0.68 0 1.36 0.09 2 0.27 c 1.53 -1.04 2.2 -0.82 2.2 -0.82 c 0.44 1.1 0.16 1.92 0.08 2.12 c 0.51 0.56 0.82 1.27 0.82 2.15 c 0 3.07 -1.87 3.75 -3.65 3.95 c 0.29 0.25 0.54 0.73 0.54 1.48 c 0 1.07 -0.01 1.93 -0.01 2.2 c 0 0.21 0.15 0.46 0.55 0.38 A 8.013 8.013 0 0 0 16 8 c 0 -4.42 -3.58 -8 -8 -8 Z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+        <div class="header__item header__center header__sm__third">
+            <div class="notification">
+                <a href="https://github.com/notifications" class="header__link">
+                    <span class="notification__indicator"></span>
+                    <svg class="header__icons" viewBox="0 0 16 16" height="16" width="16">
+                        <path d="M 8 16 a 2 2 0 0 0 1.985 -1.75 c 0.017 -0.137 -0.097 -0.25 -0.235 -0.25 h -3.5 c -0.138 0 -0.252 0.113 -0.235 0.25 A 2 2 0 0 0 8 16 Z">
+                        </path>
+                        <path fill-rule="evenodd" d="M 8 1.5 A 3.5 3.5 0 0 0 4.5 5 v 2.947 c 0 0.346 -0.102 0.683 -0.294 0.97 l -1.703 2.556 a 0.018 0.018 0 0 0 -0.003 0.01 l 0.001 0.006 c 0 0.002 0.002 0.004 0.004 0.006 a 0.017 0.017 0 0 0 0.006 0.004 l 0.007 0.001 h 10.964 l 0.007 -0.001 a 0.016 0.016 0 0 0 0.006 -0.004 a 0.016 0.016 0 0 0 0.004 -0.006 l 0.001 -0.007 a 0.017 0.017 0 0 0 -0.003 -0.01 l -1.703 -2.554 a 1.75 1.75 0 0 1 -0.294 -0.97 V 5 A 3.5 3.5 0 0 0 8 1.5 Z M 3 5 a 5 5 0 0 1 10 0 v 2.947 c 0 0.05 0.015 0.098 0.042 0.139 l 1.703 2.555 A 1.518 1.518 0 0 1 13.482 13 H 2.518 a 1.518 1.518 0 0 1 -1.263 -2.36 l 1.703 -2.554 A 0.25 0.25 0 0 0 3 7.947 V 5 Z">
+                        </path>
+                    </svg>
+                </a>
+                <span class="header__tooltip">
+                    You have unread notifications
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- Small screen header end -->
+
+    <!-- Header banner start -->
+    <div class="header__banner">
+        <form class="header__sm__form">
+            <label class="input__wrapper">
+                <input class="header__input" type="text" placeholder="Search or jump to..." autocomplete="off" />
+                <img class="input__img" src="https://github.githubassets.com/images/search-key-slash.svg" alt="">
+            </label>
+        </form>
+        <nav class="header__sm__nav">
+            <a href="https://github.com/dashboard">Dashboard</a>
+            <a href="https://github.com/pulls">Pull requests</a>
+            <a href="https://github.com/issues">Issues</a>
+            <a href="https://github.com/marketplace">Marketplace</a>
+            <a href="https://github.com/explore">Explore</a>
+            <a href="https://github.com/codespaces">Codespaces</a>
+            <a href="https://github.com/sponsors/accounts">Sponsors</a>
+            <a href="https://github.com/settings/profile">Settings</a>
+            <a id="banner__profile__link" class="header__sm__align">
+                <img class="header__sm__img" src="" 
+                alt="" height="20" width="20">
+                <span id="banner__profile__name">Tosin-Ojo</span>
+            </a>
+            <a href="/index" class="header__sm__align">
+                <svg class="header__sm__signout" viewBox="0 0 16 16" width="16" height="16">
+                    <path fill-rule="evenodd" d="M 2 2.75 C 2 1.784 2.784 1 3.75 1 h 2.5 a 0.75 0.75 0 0 1 0 1.5 h -2.5 a 0.25 0.25 0 0 0 -0.25 0.25 v 10.5 c 0 0.138 0.112 0.25 0.25 0.25 h 2.5 a 0.75 0.75 0 0 1 0 1.5 h -2.5 A 1.75 1.75 0 0 1 2 13.25 V 2.75 Z m 10.44 4.5 H 6.75 a 0.75 0.75 0 0 0 0 1.5 h 5.69 l -1.97 1.97 a 0.75 0.75 0 1 0 1.06 1.06 l 3.25 -3.25 a 0.75 0.75 0 0 0 0 -1.06 l -3.25 -3.25 a 0.75 0.75 0 1 0 -1.06 1.06 l 1.97 1.97 Z">
+                    </path>
+                </svg>
+                <span>Sign out</span>
+            </a>
+        </nav>
+    </div>
+    <!-- Header banner end -->
+
+    <div class="body__error__msg__ctn">
+        <h3 class="body__error__msg">
+            Error! Check your internet connection and input a valid username
+        </h3>
+    </div>
+
+    <!-- Main contents start -->
+    <main class="body__main">
+        <div class="body__top__user__profile__sm body__v767">
+            <div class="body__top__user__ctn__sm">
+                <div class="body__bottom__img__ctn__sm">
+                    <img 
+                    id="profile__image__large__sc"
+                    style="height: auto;"
+                    class="body__profile__img__sm"
+                    width="260"
+                    height="260"
+                    src="" 
+                    alt="Avatar" />
+                </div>
+                <div class="body__profile__name__sm">
+                    <h1 class="profile__fullname__sm"></h1>
+                    <span class="profile__username__sm"></span>
+                </div>
+            </div>
+            <div class="body__profile__bio__sm">
+            </div>
+        </div>
+        <div class="body__top"> 
+            <div class="body__top__ctn body__max_width">
+                <div class="body__top__left body__h767">
+                    <span class="body__img__container__sm">
+                        <img 
+                        id="profile__image__small"
+                        class="body__profile__img"
+                        src="" 
+                        width="32"
+                        height="32"
+                        alt="@dunglas">
+                    </span>
+                    <strong id="profile__sm__username"></strong>
+                </div>
+                <div class="body__top__right">
+                    <nav class="body__top__nav">
+                        <a id="nav__toggle__1" class="body__top__toggle">
+                            <svg class="body__nav__icon" viewBox="0 0 16 16" height="16" width="16">
+                                <path fill-rule="evenodd" d="M 0 1.75 A 0.75 0.75 0 0 1 0.75 1 h 4.253 c 1.227 0 2.317 0.59 3 1.501 A 3.744 3.744 0 0 1 11.006 1 h 4.245 a 0.75 0.75 0 0 1 0.75 0.75 v 10.5 a 0.75 0.75 0 0 1 -0.75 0.75 h -4.507 a 2.25 2.25 0 0 0 -1.591 0.659 l -0.622 0.621 a 0.75 0.75 0 0 1 -1.06 0 l -0.622 -0.621 A 2.25 2.25 0 0 0 5.258 13 H 0.75 a 0.75 0.75 0 0 1 -0.75 -0.75 V 1.75 Z m 8.755 3 a 2.25 2.25 0 0 1 2.25 -2.25 H 14.5 v 9 h -3.757 c -0.71 0 -1.4 0.201 -1.992 0.572 l 0.004 -7.322 Z m -1.504 7.324 l 0.004 -5.073 l -0.002 -2.253 A 2.25 2.25 0 0 0 5.003 2.5 H 1.5 v 9 h 3.757 a 3.75 3.75 0 0 1 1.994 0.574 Z">
+                                </path>
+                            </svg>
+                            <span>Overview</span>
+                        </a>
+                        <a class="body__top__toggle body__toggle__active">
+                            <svg class="body__nav__icon body__toggle__active" viewBox="0 0 16 16" height="16" width="16">
+                                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z">
+                                </path>
+                            </svg>
+                            <span>Repositories <span id="body__repo__count" class="repo__counter"></span></span>
+                        </a>
+                        <a id="nav__toggle__3" class="body__top__toggle">
+                            <svg class="body__nav__icon" viewBox="0 0 16 16" height="16" width="16">
+                                <path fill-rule="evenodd" d="M1.75 0A1.75 1.75 0 000 1.75v12.5C0 15.216.784 16 1.75 16h12.5A1.75 1.75 0 0016 14.25V1.75A1.75 1.75 0 0014.25 0H1.75zM1.5 1.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v12.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25V1.75zM11.75 3a.75.75 0 00-.75.75v7.5a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75zm-8.25.75a.75.75 0 011.5 0v5.5a.75.75 0 01-1.5 0v-5.5zM8 3a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0v-3.5A.75.75 0 008 3z">
+                                </path>
+                            </svg>
+                            <span>Projects</span>
+                        </a>
+                        <a id="nav__toggle__4" class="body__top__toggle">
+                            <svg class="body__nav__icon" viewBix="0 0 16 16" height="16" width="16">
+                                <path fill-rule="evenodd" d="M8.878.392a1.75 1.75 0 00-1.756 0l-5.25 3.045A1.75 1.75 0 001 4.951v6.098c0 .624.332 1.2.872 1.514l5.25 3.045a1.75 1.75 0 001.756 0l5.25-3.045c.54-.313.872-.89.872-1.514V4.951c0-.624-.332-1.2-.872-1.514L8.878.392zM7.875 1.69a.25.25 0 01.25 0l4.63 2.685L8 7.133 3.245 4.375l4.63-2.685zM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432L2.5 5.677zm6.25 8.271l4.625-2.683a.25.25 0 00.125-.216V5.677L8.75 8.432v5.516z">
+                                </path>
+                            </svg>
+                            <span>Packages</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="body__bottom body__max_width">
+            <div class="body__bottom__left body__h767">
+                <div class="body__bottom__img__ctn">
+                    <a class="body__profile__link" href="">
+                        <img 
+                        style="height: auto;"
+                        id="profile__image__large"
+                        class="body__profile__img profile__full__width"
+                        width="260"
+                        height="260"
+                        src="" 
+                        alt="Avatar" />
+                    </a>
+                    <div class="body__user__status__ctn">
+                        <div class="body__user__status__position">
+                            <div class="body__user__status">
+                                <button class="body__user__status__btn">
+                                    <div class="body__summary__ctn">
+                                        <div class="body__summary__left">
+                                            <div class="body__summary__emoji__ctn">
+                                                <svg class="body__summary__emoji" viewBox="0 0 16 16" width="16" height="16">
+                                                    <path fill-rule="evenodd" d="M 1.5 8 a 6.5 6.5 0 1 1 13 0 a 6.5 6.5 0 0 1 -13 0 Z M 8 0 a 8 8 0 1 0 0 16 A 8 8 0 0 0 8 0 Z M 5 8 a 1 1 0 1 0 0 -2 a 1 1 0 0 0 0 2 Z m 7 -1 a 1 1 0 1 1 -2 0 a 1 1 0 0 1 2 0 Z M 5.32 9.636 a 0.75 0.75 0 0 1 1.038 0.175 l 0.007 0.009 c 0.103 0.118 0.22 0.222 0.35 0.31 c 0.264 0.178 0.683 0.37 1.285 0.37 c 0.602 0 1.02 -0.192 1.285 -0.371 c 0.13 -0.088 0.247 -0.192 0.35 -0.31 l 0.007 -0.008 a 0.75 0.75 0 1 1 1.222 0.87 l -0.614 -0.431 c 0.614 0.43 0.614 0.431 0.613 0.431 v 0.001 l -0.001 0.002 l -0.002 0.003 l -0.005 0.007 l -0.014 0.019 a 1.984 1.984 0 0 1 -0.184 0.213 c -0.16 0.166 -0.338 0.316 -0.53 0.445 c -0.63 0.418 -1.37 0.638 -2.127 0.629 c -0.946 0 -1.652 -0.308 -2.126 -0.63 a 3.32 3.32 0 0 1 -0.715 -0.657 l -0.014 -0.02 l -0.005 -0.006 l -0.002 -0.003 v -0.002 h -0.001 l 0.613 -0.432 l -0.614 0.43 a 0.75 0.75 0 0 1 0.183 -1.044 h 0.001 Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="body__summary__right">
+                                            <div class="body__summary__right__content">
+                                                <span>Set status</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body__profile__name">
+                    <h1 class="profile__fullname"></h1>
+                    <span class="profile__username"></span>
+                </div>
+                <div class="body__profile__bio">
+                </div>
+            </div>
+            <div class="body__bottom__right">
+                <form>
+                    <input 
+                      type="text" 
+                      class="body__bottom__input"
+                      placeholder="Find a repository..." />
+                </form>
+                <div class="body__public__repo__count">
+                    <strong class="body__tab__repo__count"></strong> results for <strong>public</strong> repositories
+                </div>
+                <div class="body__repositories__info__ctn">
+                    <h3 class="body__repositories__info">
+                    </h3>
+                </div>
+                <div class="repositories__ctn">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main contents end -->
+
+    <!-- Footer start -->
+    <footer>
+        <div class="footer__ctn">
+            <ul class="footer__list">
+                <li>&copy; 2021 GitHub, Inc.</li>
+                <li>
+                    <a href='https://docs.github.com/en/github/site-policy/github-terms-of-service'>Terms</a>
+                </li>
+                <li>
+                    <a href='https://docs.github.com/en/github/site-policy/github-privacy-statement'>Privacy</a>
+                </li>
+                <li>
+                    <a href='https://github.com/security'>Security</a>
+                </li>
+                <li>
+                    <a href='https://www.githubstatus.com/'>Status</a>
+                </li>
+                <li>
+                    <a href='https://docs.github.com/'>Docs</a>
+                </li>
+            </ul>
+            <a href='https://github.com/' class="footer__logo">
+                <svg class="footer__icon" viewBox="0 0 16 16" height="24" width="24">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="footer__list">
+                <li>
+                    <a href='https://support.github.com/'>Contact GitHub</a>
+                </li>
+                <li>
+                    <a href='https://github.com/pricing'>Pricing</a>
+                </li>
+                <li>
+                    <a href='https://docs.github.com/'>API</a>
+                </li>
+                <li>
+                    <a href='https://services.github.com/'>Training</a>
+                </li>
+                <li>
+                    <a href='https://github.blog/'>Blog</a>
+                </li>
+                <li>
+                    <a href='https://github.com/about'>About</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feature enable modal start -->
+    <details class="feature__details header__status__overlay">
+        <summary></summary>
+        <div class="feature__details__box">
+            <div class="feature__details__content">
+                <div class="feature__details__header">
+                    <h3>Feature preview</h3>
+                    <button id="feature__details__close">
+                        <svg viewBox="0 0 16 16" height="16" width="16">
+                            <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="feature__details__body">
+                    <div class="feature__details__body__left">
+                        <ul>
+                            <li>
+                                <button class="feature__details__body__left__btn">
+                                    <span>
+                                        <svg class="feature__visible" viewBox="0 0 16 16" height="16" width="16">
+                                            <path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z">
+                                            </path>
+                                        </svg>
+                                        <svg class="feature__invisible" viewBox="0 0 16 16" height="16" width="16" style="display: none;">
+                                            <path fill-rule="evenodd" d="M.143 2.31a.75.75 0 011.047-.167l14.5 10.5a.75.75 0 11-.88 1.214l-2.248-1.628C11.346 13.19 9.792 14 8 14c-1.981 0-3.67-.992-4.933-2.078C1.797 10.832.88 9.577.43 8.9a1.618 1.618 0 010-1.797c.353-.533.995-1.42 1.868-2.305L.31 3.357A.75.75 0 01.143 2.31zm3.386 3.378a14.21 14.21 0 00-1.85 2.244.12.12 0 00-.022.068c0 .021.006.045.022.068.412.621 1.242 1.75 2.366 2.717C5.175 11.758 6.527 12.5 8 12.5c1.195 0 2.31-.488 3.29-1.191L9.063 9.695A2 2 0 016.058 7.52l-2.53-1.832zM8 3.5c-.516 0-1.017.09-1.499.251a.75.75 0 11-.473-1.423A6.23 6.23 0 018 2c1.981 0 3.67.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.619 1.619 0 010 1.798c-.11.166-.248.365-.41.587a.75.75 0 11-1.21-.887c.148-.201.272-.382.371-.53a.119.119 0 000-.137c-.412-.621-1.242-1.75-2.366-2.717C10.825 4.242 9.473 3.5 8 3.5z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <h4>
+                                        Improved container support
+                                    </h4>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="feature__details__body__right">
+                        <div>
+                            <div class="feature__body__top">
+                                <h3>Improved container support</h3>
+                                <button id="feature__enable__btn">Disable</button>
+                            </div>
+                            <div class="feature__body__info"  style="display: none;">
+                                <strong>Feature disabled.</strong>
+                                Please <a href="https://support.github.com/contact/feedback?contact%5Bcategory%5D=packages&contact%5Bsubject%5D=Product+feedback">give feedback</a> so we can improve it!
+                            </div>
+                            <p class="feature__body__paragraph">
+                                You can more easily share containers in your organization, set granular access permissions, and anonymously access public container images. Additionally, layers are shared between images across GitHub.
+                            </p>
+                            <div class="feature__body__bottom">
+                                <a href="https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/about-github-container-registry">Documentation</a>
+                                <span>•</span>
+                                <a href="https://support.github.com/contact/feedback?contact%5Bcategory%5D=packages&contact%5Bsubject%5D=Product+feedback">Give feedback</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </details>
+    <!-- Feature enable modal end -->
+
+    <!-- Status modal start -->
+    <details id="header__status__details" class="status__overlay header__status__overlay">
+        <summary>
+        </summary>
+        <div class="header__status__modal">
+            <form id="status__form">
+                <div class="status__modal__head">
+                    <h3 class="status__modal__title">Edit status</h3>
+                    <button id="close__status__modal" class="status__modal__head__btn">
+                        <svg class="status__modal__head__btn__icon" viewBox="0 0 16 16" height="16" width="16">
+                            <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="status__modal__body">
+                    <div class="status__modal__body__top">
+                        <span class="status__modal__emoji">
+                            <button class="status__modal__emoji__btn" onclick="return false">
+                                <svg id="status__emoji__smile" viewBox="0 0 16 16" height="16" width="16">
+                                    <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zM5 8a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zM5.32 9.636a.75.75 0 011.038.175l.007.009c.103.118.22.222.35.31.264.178.683.37 1.285.37.602 0 1.02-.192 1.285-.371.13-.088.247-.192.35-.31l.007-.008a.75.75 0 111.222.87l-.614-.431c.614.43.614.431.613.431v.001l-.001.002-.002.003-.005.007-.014.019a1.984 1.984 0 01-.184.213c-.16.166-.338.316-.53.445-.63.418-1.37.638-2.127.629-.946 0-1.652-.308-2.126-.63a3.32 3.32 0 01-.715-.657l-.014-.02-.005-.006-.002-.003v-.002h-.001l.613-.432-.614.43a.75.75 0 01.183-1.044h.001z">
+                                    </path>
+                                </svg>
+                                <div id="status__emoji__vacation" class="status__emoji__align">
+                                    &#127796;
+                                </div>
+                                <div id="status__emoji__sick" class="status__emoji__align">
+                                    &#129298;
+                                </div>
+                                <div id="status__emoji__home" class="status__emoji__align">
+                                    &#127968;
+                                </div>
+                                <div id="status__emoji__focus" class="status__emoji__align">
+                                    &#127919;
+                                </div>
+                            </button>
+                        </span>
+                        <span class="status__modal__input__ctn">
+                            <input 
+                              id="status__input"
+                              class="status__modal__input" 
+                              type="text" 
+                              autocomplete="off" 
+                              placeholder="What's happening?" />
+                        </span>
+                    </div>
+                    <div id="modal__suggestions" class="status__modal__suggestions">
+                        <h4 class="status__suggestions__header">Suggestions:</h4>
+                        <div class="status__suggestions__ctn">
+                            <div class="status__suggestions__left">
+                                <button id="suggestion__vacation" class="status__suggestions__button">
+                                    <div class="status__suggestion__emoji">
+                                        <span>&#127796;</span>
+                                    </div>
+                                    <span class="status__suggestion__desc">
+                                        On vacation
+                                    </span>
+                                </button>
+                                <button id="suggestion__sick" class="status__suggestions__button">
+                                    <div class="status__suggestion__emoji">
+                                        &#129298;
+                                    </div>
+                                    <span class="status__suggestion__desc">
+                                        Out sick
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="status__suggestions__right">
+                                <button id="suggestion__home" class="status__suggestions__button">
+                                    <div class="status__suggestion__emoji">
+                                        &#127968;
+                                    </div>
+                                    <span class="status__suggestion__desc">
+                                        Working from home
+                                    </span>
+                                </button>
+                                <button id="suggestion__focus" class="status__suggestions__button">
+                                    <div class="status__suggestion__emoji">
+                                        &#127919;
+                                    </div>
+                                    <span class="status__suggestion__desc">
+                                        Focusing
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status__modal__body__bottom">
+                        <div class="status__checkbox__ctn">
+                            <input id="status__checkbox" class="status__checkbox" type="checkbox" />
+                            <label class="status__checkbox__label">Busy</label>
+                            <p class="status__checkbox__paragraph">       
+                                When others mention you, assign you, or request your review,
+                                GitHub will let them know that you have limited availability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="status__modal__clear__status">
+                        <span>Clear status</span>
+                        <details class="status__modal__details">
+                            <summary class="status__modal__summary">
+                                <span id="clear__status__options">Never</span>
+                                <div class="status__modal__summary__dropdown"></div>
+                            </summary>
+                            <ul class="status__modal__summary__list">
+                                <li>
+                                    <button id="status__option__never">
+                                        <span>Never</span>
+                                        <div>Keep this status until you clear your status or edit your status.</div>
+                                    </button>
+                                </li>
+                                <li class="status__modal__summary__divider">
+                                </li>
+                                <li>
+                                    <button id="status__option__30min">
+                                        in 30 minutes
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="status__option__1hr">
+                                        in 1 hour
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="status__option__4hrs">
+                                        in 4 hours
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="status__option__today">
+                                        today
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="status__option__week">
+                                        this week
+                                    </button>
+                                </li>
+                            </ul>
+                        </details>
+                    </div>
+                    <div class="status__modal__foot">
+                        <button id="set__status__button" disabled>Set status</button>
+                        <button id="clear__status__button" disabled>Clear status</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </details>
+    <!-- Status modal end -->
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./JS/config.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/dayjs.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/plugin/relativeTime.min.js"></script>
+    <script type="text/javascript" src="./JS/data.js"></script>
+    <script type="text/javascript" src="./JS/header.js"></script>
+    <script type="text/javascript" src="./JS/body.js"></script>
+</body>
+</html>
