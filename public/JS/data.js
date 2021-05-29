@@ -45,7 +45,7 @@ fetch('https://api.github.com/graphql', {
 .then(data => {
     let user = data.data.user
     document.title = user.name ? `${username} (${user.name}) / Repositories` : `${username} / Repositories`
-    document.querySelector('.header__loading__bar').style.display = 'block'
+    document.querySelector('.header__loading__bar').style.display = 'none'
     document.querySelector('.body__main').style.display = 'block'
     document.querySelector('.footer__ctn').style.display = 'flex'
     document.querySelector('.body__profile__link').href = user.avatarUrl
